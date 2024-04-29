@@ -1,0 +1,153 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+}
+
+body,
+header,
+#select-menu {
+    background-color: #1F2937;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    align-content: center;
+   height: 90px;
+   width: 100%; 
+   box-shadow: 0 4px 11px #00000015;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#color-input,
+#select-menu,
+button {
+    width: 30%;
+}
+
+
+#color-input {
+    height: 43px;
+}
+
+#select-menu {
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    color: #D5D4D8;
+    padding: 0 36px 0 13px;
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url('images/Selector.png');
+    background-repeat: no-repeat; 
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+option:checked {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #3D4B60;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 13px 11px;
+}
+
+
+/* Main Section */
+
+main {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 90px;
+    height: calc(100% - 90px)
+}
+
+.color-section {
+    width: 20%;
+}
+
+.color-container {
+    height: 92%;
+}
+
+.hex-code-container {
+    height: 8%;
+    align-content: center;
+    text-align: center;
+}
+
+.hex-code {
+    color: #D5D4D8;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+    header {
+        padding: 20px 0;
+    }
+    
+    header div {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 10px;
+    }
+    
+    #color-input,
+    #select-menu,
+    button {
+        width: 100%;
+    }
+    
+    button {
+        grid-column: span 2;
+        font-size: 14px;
+    }
+    
+    #select-menu {
+        background-position-x: calc(100% - 10px);
+        background-position-y: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    button {
+        font-size: 16px;
+    }
+}
+
+
+.copy-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #1F2937;
+    font-weight: 500;
+    border-radius: 5px;
+    z-index: 9999;
+}
