@@ -37,6 +37,13 @@ button {
     width: 30%;
 }
 
+#color-input,
+#select-menu,
+button,
+.color-container,
+.hex-code {
+    cursor: pointer;
+}
 
 #color-input {
     height: 43px;
