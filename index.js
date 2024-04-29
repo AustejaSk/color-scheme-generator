@@ -12,7 +12,7 @@ document.getElementById("get-scheme-btn").addEventListener("click", function(){
      document.getElementById("hex-code-color-1").textContent = "#" + selectedColor.toUpperCase()
      
      
-     fetch(`"https://www.thecolorapi.com/scheme?hex=${selectedColor}&mode=${selectedMenuItem}&count=4"`)
+     fetch(`https://www.thecolorapi.com/scheme?hex=${selectedColor}&mode=${selectedMenuItem}&count=4`)
         .then(res => res.json())
         .then(data => {
             data.colors.forEach(function(color, index) {
