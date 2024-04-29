@@ -108,6 +108,28 @@ main {
     font-weight: 500;
 }
 
+/* color-section backgrounds start */
+
+#color-1-container {
+    background-color: #A48BDF;
+}
+
+#color-2-container {
+    background-color: #5C36B5;
+}
+                
+#color-3-container {
+    background-color: #7D5AD0;
+}
+
+#color-4-container {
+    background-color: #A48BDF;
+}
+
+#color-5-container {
+    background-color: #CBBCED;
+}
+
 
 /* Media Queries */
 
